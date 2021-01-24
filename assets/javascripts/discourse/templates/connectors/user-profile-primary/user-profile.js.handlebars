@@ -1,0 +1,24 @@
+  <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <div class="user-profile" style="text-decoration: none;">
+
+{{#if model.twitter_screen_name}}
+    <a href="https://twitter.com/{{model.twitter_screen_name}}" style="text-decoration: none;">
+      <i class="fab fa-twitter" style="text-decoration: none;"></i>&nbsp;&nbsp;
+    </a>
+{{/if}}
+
+{{#if model.github_screen_name}}
+    <a href="https://github.com/{{model.github_screen_name}}" style="text-decoration: none;">
+      <i class="fab fa-github" style="text-decoration: none;"></i>&nbsp;&nbsp;
+    </a>
+{{/if}}
+
+{{#if model.steam_screen_name}}
+    <a href="https://steamcommunity.com/id/{{model.steam_screen_name}}" style="text-decoration: none;">
+      <i class="fab fa-steam" style="text-decoration: none;"></i>
+    </a>
+{{/if}}
+
+  </div>
